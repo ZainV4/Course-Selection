@@ -1,6 +1,6 @@
 /**@author Zain Alsudani*/
 
-import data from './json/courseContent.json' assert { type: 'json'};
+import data from './courseContent.json' assert { type: 'json'};
 console.log(data);
 
 // variable for the main frame/window

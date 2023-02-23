@@ -1,8 +1,5 @@
 /**@author Zain Alsudani*/
 
-import data from '/json/courseContent.json' assert { type: 'json'};
-console.log(data);
-
 // variable for the main frame/window
 let mainWebsite = document.getElementsByClassName("page");
 // variable for the title frame/widnow

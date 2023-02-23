@@ -33,7 +33,7 @@ body {
     text-align: center;
     font-size: .9rem;
     text-decoration: none;
-    background-color: rgb(19, 76, 141);
+    background-color: rgb(12, 157, 58);
     color: rgb(255, 255, 255);
 }
 
@@ -46,8 +46,8 @@ body {
     color: white;
 }
 .title-page-btn:hover {
-    background-color: #24252A;
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
   
@@ -250,14 +250,97 @@ li:hover {
 
 .firstBox-title {
     font-size: 50px;
-    margin: 4%;
-    padding: 5%;
+    position: absolute;
+    top: calc(125% - 125px);
+    left: calc(11% - 11px);
+    color: #fff;
+} 
+.grade {
+    position: absolute;
+    top: calc(140% - 140px);
+    left: calc(13% - 13px);
+    border: #24252A;
     color: #fff;
 }
 
+@media only screen and (max-width:670px) {
+    .grade {
+        left: calc(62% - 62px);
+    }
+}
+
+/* toggle */
+.switch {
+    position: absolute;
+    top: calc(144% - 144px);
+    left: calc(11% - 11px);
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #24252A;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media (max-width:670px){
+    .switch {
+        left: calc(55% - 55px);
+    }
+}
+/*control area */
 .controls {
     position: absolute;
-    top: calc(178% - 178px);
+    top: calc(150% - 150px);
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -273,9 +356,20 @@ li:hover {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
+.controls div {
+    background-color: #24252a;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    height: 50vh;
+    margin: 1rem;
+    position: relative;
+    width: 80%;
+}
   
 .controls button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.474);
 }
 /* secondBox */
 .secondBox {

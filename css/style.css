@@ -28,10 +28,13 @@ body {
     left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
-    font-family: verdana;
-    line-height: 65px;
-    color: white;
-    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: .9rem;
+    text-decoration: none;
+    background-color: rgb(19, 76, 141);
+    color: rgb(255, 255, 255);
 }
 
 .me {
@@ -43,7 +46,8 @@ body {
     color: white;
 }
 .title-page-btn:hover {
-    text-shadow: -1px 1px 20px rgb(19, 76, 141), 1px -1px 10px #fff;
+    background-color: #24252A;
+    color: rgb(255, 255, 255);
 }
 
   

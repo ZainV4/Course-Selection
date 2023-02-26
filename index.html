@@ -54,33 +54,48 @@
         </div>
         <div class="firstBox">
             <h1 class="firstBox-title"><i>Grade 9/10</i></h1>
-            <p class="grade">9</p>
+            <p class="grade" id="grade">9</p>
             <label class="switch">
                 <input type="checkbox" id="switch">
                 <span class="slider round"></span>
             </label>            
             <div class="controls">
                 <button class="prev" id="prev">&#10094;</button>
-                <div>
-                    <h2 class="CourseCode">start swiping</h2>
-                    <h3 class="CourseName">Yes but how?</h3>
-                    <p class="CourseDiscription">use the buttons on the sides (<) (>)</p>
+                <div class="grade9Div" id="grade9Div" style="display: block;">
+                    <h2 class="CourseCode9">start swiping9</h2>
+                    <h3 class="CourseName9">Yes but how?</h3>
+                    <p class="CourseDiscription9">use the buttons on the sides (<) (>)</p>
+                </div>
+                <div class="grade10Div" id="grade10Div" style="display: none;">
+                    <h2 class="CourseCode10">start swiping10</h2>
+                    <h3 class="CourseName10">Yes but how?</h3>
+                    <p class="CourseDiscription10">use the buttons on the sides (<) (>)</p>
                 </div>
                 <button class="next" id="next">&#10095;</button>
             </div>
         </div>
         <div class="secondBox">
             <h1 class="secondBox-title"><i>Grade 11/12</i></h1>
+            <p class="gradeS" id="grade">11</p>
+            <label class="switch-2">
+                <input type="checkbox" id="switch">
+                <span class="slider-2 round"></span>
+            </label>  
             <div class="controls-2">
-                <button class="prev-1">&#10094;</button>
-                <button class="next-1">&#10095;</button>
+                <button class="prev-1" id="prev-1">&#10094;</button>
+                <div class="grade11Div" id="grade11Div" style="display: block;">
+                    <h2 class="CourseCode11">start swiping11</h2>
+                    <h3 class="CourseName11">Yes but how?</h3>
+                    <p class="CourseDiscription11">use the buttons on the sides (<) (>)</p>
+                </div>
+                <button class="next-1" id="next-1">&#10095;</button>
             </div>
         </div>
         <div class="thirdBox">
-            <h1 class="thirdBox-title"><i>Special courses</i></h1>
+            <h1 class="thirdBox-title"><i>Special courses</i></h1> 
             <div class="controls-3">
-                <button class="prev-1">&#10094;</button>
-                <button class="next-2">&#10095;</button>
+                <button class="prev-2" id="prev-2">&#10094;</button>
+                <button class="next-2" id="next-2">&#10095;</button>
             </div>
         </div>
         <div class="fourthBox">
@@ -111,6 +126,6 @@
         
     </div>
     <script type="module" src="/js/main.js"></script>
-    <script type="module" src="/js/contentDisplayer.js"></script>
+    <script type="module" src="/js/contentDisplayerJunior.js"></script>
     </body>
 </html>

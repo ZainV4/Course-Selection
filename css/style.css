@@ -11,6 +11,7 @@ body {
 }
 
 
+
 .title-page-img {
     position: absolute;
     top: 40%;
@@ -311,7 +312,7 @@ li:hover {
 }
   
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #24252A;
 }
   
 input:focus + .slider {
@@ -380,14 +381,28 @@ input:checked + .slider:before {
 
 .secondBox-title {
     font-size: 50px;
-    margin: 4%;
-    padding: 2%;
+    position: absolute;
+    top: calc(245% - 245px);
+    left: calc(11% - 11px);
     color: #fff;
 }
 
+.gradeS {
+    position: absolute;
+    top: calc(256% - 256px);
+    left: calc(13% - 13px);
+    border: #24252A;
+    color: #fff;
+}
+
+@media only screen and (max-width:670px) {
+    .gradeS {
+        left: calc(62% - 62px);
+    }
+}
 .controls-2 {
     position: absolute;
-    top: calc(305% - 305px);
+    top: calc(268% - 268px);
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -403,10 +418,92 @@ input:checked + .slider:before {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
+.controls-2 div {
+    background-color: rgb(19, 76, 141);
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    height: 50vh;
+    margin: 1rem;
+    position: relative;
+    width: 80%;
+}
   
-.controls-3 button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}    
+.controls button:hover {
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+/* toggle for box2*/
+.switch-2 {
+    position: absolute;
+    top: calc(244% - 144px);
+    left: calc(11% - 11px);
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+  }
+  
+  .switch-2 input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider-2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(19, 76, 141);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider-2:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider-2 {
+    background-color: rgb(19, 76, 141);
+}
+  
+input:focus + .slider-2 {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider-2:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider-2.round {
+    border-radius: 34px;
+}
+  
+.slider-2.round:before {
+    border-radius: 50%;
+}
+
+@media (max-width:670px){
+    .switch-2 {
+        left: calc(55% - 55px);
+    }
+}
+
+
 /* thirdBox */
 .thirdBox {
     background-color: rgb(19, 76, 141);

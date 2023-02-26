@@ -15,6 +15,6 @@ document.getElementById("lol").addEventListener("click", enterWebsite);
 function enterWebsite() {
     titleWebsite[0].style.display="none"; 
     mainWebsite[0].style.display="block"; 
-    console.log(mainWebsite);
-    console.log(titleWebsite);
+    //console.log(mainWebsite);
+    //console.log(titleWebsite);
 }

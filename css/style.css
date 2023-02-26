@@ -16,6 +16,10 @@ a {
 }
 
 
+.CourseDiscription9, .CourseDiscription10, .CourseDiscription11, .CourseDiscription12, .CourseDiscriptionSpecial {
+    font-size: 120%;
+}
+
 .title-page-img {
     position: absolute;
     top: 40%;
@@ -115,6 +119,33 @@ img {
     border: 2px solid black;
     border-color:  #24252A;
 }
+.dropdown {
+    display: none;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    background-color: #24252A;
+    box-shadow: 0px 10px 10px 0px #24252A;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    font-size: 12px;
+    border: rgb(19, 76, 141);
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
 
 .menu-btn:hover {
     background-color: #24252A;
@@ -142,6 +173,9 @@ li:hover {
         display: none;
     }
     .menu-btn {
+        display: block;
+    }
+    .dropdown {
         display: block;
     }
 }
@@ -251,6 +285,7 @@ li:hover {
     background-color:  rgb(19, 76, 141);
     height: 100vh;
     width: 100%;
+
 }
 
 .firstBox-title {
@@ -383,6 +418,7 @@ input:checked + .slider:before {
     width: 100%;
 }
 
+
 .secondBox-title {
     font-size: 50px;
     position: absolute;
@@ -400,18 +436,26 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width:670px) {
+
     .gradeS {
+        top: calc(253% - 253px);
         left: calc(62% - 62px);
     }
+
+    .CourseDiscriptionSpecial {
+        font-size: 60%;
+    }
 }
+
 .controls-2 {
     position: absolute;
-    top: calc(272% - 272px);
+    top: calc(271% - 271px);
     display: flex;
     justify-content: space-between;
     position: absolute;
     width: 100%;
 }
+
   
 .controls-2 button {
     padding: 16px;
@@ -437,6 +481,7 @@ input:checked + .slider:before {
 .controls-2 button:hover {
     background-color: rgba(0, 0, 0, 0.474);
 }
+
 
 /* toggle for box2*/
 .switch-2 {
@@ -515,6 +560,7 @@ input:checked + .slider-2:before {
     width: 100%;
 }
 
+
 .thirdBox-title {
     font-size: 50px;
     position: absolute;
@@ -526,7 +572,7 @@ input:checked + .slider-2:before {
 
 .controls-3 {
     position: absolute;
-    top: calc(386% - 386px);
+    top: calc(378% - 378px);
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -675,6 +721,42 @@ input:checked + .slider-2:before {
     }
     .footer .row a i{
         margin:0% 3%;
+    }
+
+    .image--cover {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 16%;
+      
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (max-width:900px){
+    .controls-4 {
+        position: absolute;
+        top: calc(480% - 480px);
+        align-items: center;
+    }
+
+    .image--cover {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 16%;
+      
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .fourthBox-title {
+        font-size: 50px;
+        position: absolute;
+        top: calc(470% - 470px);
+        left: calc(50% - 50px);
+        color: #fff;
     }
 }
 

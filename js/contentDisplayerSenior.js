@@ -52,7 +52,7 @@ theSwitch2.addEventListener("click", function() {
         gradeS.innerHTML = 12
         grade12Box.style.display = "block";
         grade11Box.style.display = "none";
-    } else if (grade.innerHTML == 12) {
+    } else if (gradeS.innerHTML == 12) {
         gradeS.innerHTML = 11
         grade11Box.style.display = "block";
         grade12Box.style.display = "none";
@@ -67,7 +67,7 @@ prev1.addEventListener("click", () => {
     }
     console.log(counter11);
     theCourseCode11.innerHTML = data.grade11[Math.abs(counter11)].courseCode;
-    theCourseName11.innerHTML = data.grade11[Math.abs(counter11)].courseName;
+    theCourseName11.innerHTML = data.grade11[Math.abs(counter11)].couresName;
     theCourseDiscription11.innerHTML = data.grade11[Math.abs(counter11)].courseDiscription;
 });
 next1.addEventListener("click", () => {
@@ -75,9 +75,8 @@ next1.addEventListener("click", () => {
     if(Math.abs(counter11) > 14) {
         counter11=0;
     }
-    console.log(counter11);
     theCourseCode11.innerHTML = data.grade11[Math.abs(counter11)].courseCode;
-    theCourseName11.innerHTML = data.grade11[Math.abs(counter11)].courseName;
+    theCourseName11.innerHTML = data.grade11[Math.abs(counter11)].couresName;
     theCourseDiscription11.innerHTML = data.grade11[Math.abs(counter11)].courseDiscription;
 });
 
@@ -90,7 +89,7 @@ prev1.addEventListener("click", () => {
     }
     console.log(counter12);
     theCourseCode12.innerHTML = data.grade12[Math.abs(counter12)].courseCode;
-    theCourseName12.innerHTML = data.grade12[Math.abs(counter10)].courseName;
+    theCourseName12.innerHTML = data.grade12[Math.abs(counter12)].couresName;
     theCourseDiscription12.innerHTML = data.grade12[Math.abs(counter12)].courseDiscription;
 });
 next1.addEventListener("click", () => {
@@ -100,7 +99,7 @@ next1.addEventListener("click", () => {
     }
     console.log(counter12);
     theCourseCode12.innerHTML = data.grade12[Math.abs(counter12)].courseCode;
-    theCourseName12.innerHTML = data.grade12[Math.abs(counter12)].courseName;
+    theCourseName12.innerHTML = data.grade12[Math.abs(counter12)].couresName;
     theCourseDiscription12.innerHTML = data.grade12[Math.abs(counter12)].courseDiscription;
 });
 

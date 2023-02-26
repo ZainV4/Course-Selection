@@ -38,10 +38,10 @@ let grade9Box = document.getElementById("grade9Div");
 let grade10Box = document.getElementById("grade10Div");
 
 // increases by clicking of next btn and decreases by clicking on prev (counter 9)
-let counter9 = 0;
+let counter9 = 1;
 
 // increases by clicking of next btn and decreases by clicking on prev (grade 10)
-let counter10 = 0;
+let counter10 = 1;
 
 
 

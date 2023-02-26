@@ -25,82 +25,82 @@ let theCourseDiscription12 = document.getElementsByClassName("CourseDiscription1
 let prev1 = document.getElementById("prev-1");
 
 // variable for the next tag
-let next2 = document.getElementById("next-1");
+let next1 = document.getElementById("next-1");
 
 // variable for the toggle tag
-let theSwitch = document.getElementById("switch");
+let theSwitch2 = document.getElementById("switch-2");
 // variable which shows the number of the grade
-let grade = document.getElementById("grade");
+let gradeS = document.getElementById("gradeS");
 
-// variable for grade 9 div
-let grade9Box = document.getElementById("grade9Div");
-// variable for grade 10 div
-let grade10Box = document.getElementById("grade10Div");
+// variable for grade 11 div
+let grade11Box = document.getElementById("grade11Div");
+// variable for grade 12 div
+let grade12Box = document.getElementById("grade12Div");
 
-// increases by clicking of next btn and decreases by clicking on prev (counter 9)
-let counter9 = 0;
+// increases by clicking of next btn and decreases by clicking on prev (counter 11)
+let counter11 = 0;
 
-// increases by clicking of next btn and decreases by clicking on prev (grade 10)
-let counter10 = 0;
-
-
+// increases by clicking of next btn and decreases by clicking on prev (grade 12)
+let counter12 = 0;
 
 
 
-theSwitch.addEventListener("click", function() {
-    if(grade.innerHTML == 9) {
-        grade.innerHTML = 10
-        grade10Box.style.display = "block";
-        grade9Box.style.display = "none";
-    } else if (grade.innerHTML == 10) {
-        grade.innerHTML = 9
-        grade9Box.style.display = "block";
-        grade10Box.style.display = "none";
+
+
+theSwitch2.addEventListener("click", function() {
+    if(gradeS.innerHTML == 11) {
+        gradeS.innerHTML = 12
+        grade12Box.style.display = "block";
+        grade11Box.style.display = "none";
+    } else if (grade.innerHTML == 12) {
+        gradeS.innerHTML = 11
+        grade11Box.style.display = "block";
+        grade12Box.style.display = "none";
     }
 });
 
-// grade 9 functions
-prev.addEventListener("click", () => {
-    counter9--;
-    if(Math.abs(counter9) < 0) {
-        counter9=24;
+// grade 11 functions
+prev1.addEventListener("click", () => {
+    counter11--;
+    if(Math.abs(counter11) < 0) {
+        counter11=24;
     }
-    console.log(counter9);
-    theCourseCode9.innerHTML = data.grade9[Math.abs(counter9)].courseCode;
-    theCourseName9.innerHTML = data.grade9[Math.abs(counter9)].courseName;
-    theCourseDiscription9.innerHTML = data.grade9[Math.abs(counter9)].courseDiscription;
+    console.log(counter11);
+    theCourseCode11.innerHTML = data.grade11[Math.abs(counter11)].courseCode;
+    theCourseName11.innerHTML = data.grade11[Math.abs(counter11)].courseName;
+    theCourseDiscription11.innerHTML = data.grade11[Math.abs(counter11)].courseDiscription;
 });
-next.addEventListener("click", () => {
-    counter9++;
-    if(Math.abs(counter9) > 14) {
-        counter9=0;
+next1.addEventListener("click", () => {
+    counter11++;
+    if(Math.abs(counter11) > 14) {
+        counter11=0;
     }
-    console.log(counter9);
-    theCourseCode9.innerHTML = data.grade9[Math.abs(counter9)].courseCode;
-    theCourseName9.innerHTML = data.grade9[Math.abs(counter9)].courseName;
-    theCourseDiscription9.innerHTML = data.grade9[Math.abs(counter9)].courseDiscription;
+    console.log(counter11);
+    theCourseCode11.innerHTML = data.grade11[Math.abs(counter11)].courseCode;
+    theCourseName11.innerHTML = data.grade11[Math.abs(counter11)].courseName;
+    theCourseDiscription11.innerHTML = data.grade11[Math.abs(counter11)].courseDiscription;
 });
 
 
-// grade 10 functions
-prev.addEventListener("click", () => {
-    counter10--;
-    if(Math.abs(counter10) < 0) {
-        counter9=24;
+// grade 12 functions
+prev1.addEventListener("click", () => {
+    counter12--;
+    if(Math.abs(counter12) < 0) {
+        counter12=24;
     }
-    console.log(counter9);
-    theCourseCode10.innerHTML = data.grade10[Math.abs(counter10)].courseCode;
-    theCourseName10.innerHTML = data.grade10[Math.abs(counter10)].courseName;
-    theCourseDiscription10.innerHTML = data.grade10[Math.abs(counter10)].courseDiscription;
+    console.log(counter12);
+    theCourseCode12.innerHTML = data.grade12[Math.abs(counter12)].courseCode;
+    theCourseName12.innerHTML = data.grade12[Math.abs(counter10)].courseName;
+    theCourseDiscription12.innerHTML = data.grade12[Math.abs(counter12)].courseDiscription;
 });
-next.addEventListener("click", () => {
-    counter10++;
-    if(Math.abs(counter10) > 14) {
-        counter10=0;
+next1.addEventListener("click", () => {
+    counter12++;
+    if(Math.abs(counter12) > 14) {
+        counter12=0;
     }
-    console.log(counter9);
-    theCourseCode10.innerHTML = data.grade10[Math.abs(counter10)].courseCode;
-    theCourseName10.innerHTML = data.grade10[Math.abs(counter10)].courseName;
-    theCourseDiscription10.innerHTML = data.grade10[Math.abs(counter10)].courseDiscription;
+    console.log(counter12);
+    theCourseCode12.innerHTML = data.grade12[Math.abs(counter12)].courseCode;
+    theCourseName12.innerHTML = data.grade12[Math.abs(counter12)].courseName;
+    theCourseDiscription12.innerHTML = data.grade12[Math.abs(counter12)].courseDiscription;
 });
 

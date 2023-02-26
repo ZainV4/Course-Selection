@@ -65,7 +65,6 @@ prev.addEventListener("click", () => {
     if(Math.abs(counter9) < 0) {
         counter9=24;
     }
-    console.log(counter9);
     theCourseCode9.innerHTML = data.grade9[Math.abs(counter9)].courseCode;
     theCourseName9.innerHTML = data.grade9[Math.abs(counter9)].courseName;
     theCourseDiscription9.innerHTML = data.grade9[Math.abs(counter9)].courseDiscription;
@@ -98,7 +97,6 @@ next.addEventListener("click", () => {
     if(Math.abs(counter10) > 14) {
         counter10=0;
     }
-    console.log(counter9);
     theCourseCode10.innerHTML = data.grade10[Math.abs(counter10)].courseCode;
     theCourseName10.innerHTML = data.grade10[Math.abs(counter10)].courseName;
     theCourseDiscription10.innerHTML = data.grade10[Math.abs(counter10)].courseDiscription;

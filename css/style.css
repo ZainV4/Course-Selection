@@ -10,6 +10,10 @@ body {
     background-color: #24252A;
 }
 
+a {
+    text-decoration: none; 
+    color: inherit;
+}
 
 
 .title-page-img {
@@ -161,7 +165,7 @@ li:hover {
 }
 
 .box-one-paragraph {
-    margin: 2rem 0;
+    margin: 1rem 0;
     width: 70%;
     max-width: 500px;
     line-height: 1.5rem;
@@ -375,7 +379,7 @@ input:checked + .slider:before {
 /* secondBox */
 .secondBox {
     background-color:  #24252A;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -402,7 +406,7 @@ input:checked + .slider:before {
 }
 .controls-2 {
     position: absolute;
-    top: calc(268% - 268px);
+    top: calc(272% - 272px);
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -430,7 +434,7 @@ input:checked + .slider:before {
     width: 80%;
 }
   
-.controls button:hover {
+.controls-2 button:hover {
     background-color: rgba(0, 0, 0, 0.474);
 }
 
@@ -513,14 +517,16 @@ input:checked + .slider-2:before {
 
 .thirdBox-title {
     font-size: 50px;
-    margin: 4%;
-    padding: 5%;
+    position: absolute;
+    top: calc(360% - 360px);
+    left: calc(11% - 11px);
     color: #fff;
 }
 
+
 .controls-3 {
     position: absolute;
-    top: calc(420% - 420px);
+    top: calc(386% - 386px);
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -536,12 +542,26 @@ input:checked + .slider-2:before {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
+.controls-3 div {
+    background-color: #24252A;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    height: 50vh;
+    margin: 1rem;
+    position: relative;
+    width: 80%;
+}
   
 .controls-3 button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.474);
 }
+
+
 /* .fourthBox */
 .fourthBox {
+    text-align: center;
     background-color: #24252A;
     height: 100vh;
     width: 100%;
@@ -549,11 +569,59 @@ input:checked + .slider-2:before {
 
 .fourthBox-title {
     font-size: 50px;
-    margin: 4%;
-    padding: 3%;
+    position: absolute;
+    top: calc(480% - 480px);
+    left: calc(50% - 50px);
     color: #fff;
 }
 
+.controls-4 {
+    position: absolute;
+    top: calc(500% - 500px);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+  
+.controls-4 button {
+    padding: 16px;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.controls-4 div {
+    background-color: #24252A;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    height: 50vh;
+    margin: 1rem;
+    position: relative;
+    width: 80%;
+}
+  
+.controls-4 button:hover {
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+.wrapper {
+    padding: 100px;
+  }
+  
+.image--cover {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px;
+  
+    object-fit: cover;
+    object-position: center right;
+}
 
 /* footer */
 .footer{

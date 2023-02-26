@@ -63,7 +63,7 @@ theSwitch2.addEventListener("click", function() {
 prev1.addEventListener("click", () => {
     counter11--;
     if(Math.abs(counter11) < 0) {
-        counter11=24;
+        counter11=27;
     }
     console.log(counter11);
     theCourseCode11.innerHTML = data.grade11[Math.abs(counter11)].courseCode;
@@ -72,7 +72,7 @@ prev1.addEventListener("click", () => {
 });
 next1.addEventListener("click", () => {
     counter11++;
-    if(Math.abs(counter11) > 14) {
+    if(Math.abs(counter11) > 27) {
         counter11=0;
     }
     theCourseCode11.innerHTML = data.grade11[Math.abs(counter11)].courseCode;
